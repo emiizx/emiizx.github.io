@@ -342,7 +342,10 @@
           try {
             const response = await fetch('https://api-bypassers.onrender.com/api/bypass', {
               method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
+              headers: {
+                'Content-Type': 'application/json',
+                'X-API-Key': 'freeApikey'
+              },
               body: JSON.stringify({ url: url })
             });
 
@@ -368,7 +371,6 @@
         }
         return { success: false, result: null };
       }
-
       form.addEventListener('submit', async (event) => {
         event.preventDefault();
 
