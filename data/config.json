@@ -1,0 +1,9 @@
+{
+  "name":"Aurora Maps",
+  "version":"1.0",
+  "theme":"aurora",
+  "defaultZoom":15,
+  "defaultPitch":70,
+  "buildings":true,
+  "weather":true
+}
